@@ -1,0 +1,13 @@
+.navbar{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .navlink{
+        padding: 0.7rem;
+        font-size: 18px;
+        color: var(--textcolor);
+    }
+}
