@@ -1,0 +1,35 @@
+{
+    "tabWidth": 4,
+    "useTabs": true,
+    "printWidth": 160,
+    "proseWrap": "never",
+    "jsxSingleQuote": true,
+    "singleAttributePerLine": false,
+    "arrowParens": "avoid",
+    "overrides": [
+        {
+            "files": ["*.handlebars", "*.hbs", "*.html", "*.htm"],
+            "options": {
+                "parser": "html"
+            }
+        },
+        {
+            "files": ["*.scss", "*.sass"],
+            "options": {
+                "parser": "scss"
+            }
+        },
+        {
+            "files": "*.css",
+            "options": {
+                "parser": "css"
+            }
+        },
+        {
+            "files": ["*.ts", "*.tsx"],
+            "options": {
+                "parser": "typescript"
+            }
+        }
+    ]
+}
