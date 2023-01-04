@@ -3,6 +3,7 @@
     width: 100%;
 
     &>.star{
+        border-radius: 50%;
         position: absolute;
         width: var(--i);
         height: var(--i);
