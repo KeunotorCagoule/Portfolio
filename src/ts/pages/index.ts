@@ -25,6 +25,11 @@ const placeStar = () => {
     })
 }
 
+const displaySidebar = () => {
+    const sidebar = document.querySelector('.nav-icon') as HTMLDivElement | null;
+
+}
+
 generateStar();
 placeStar();
 

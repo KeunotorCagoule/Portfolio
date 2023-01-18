@@ -5,7 +5,6 @@ import createError from "http-errors";
 import logger from "morgan";
 import cors from "cors";
 import bodyParser from "body-parser";
-import sassMiddleware from "node-sass-middleware";
 // Handlebars helpers
 import helpers from "./helpers";
 
@@ -34,19 +33,6 @@ app.use(cors());
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(
-    sassMiddleware({
-        src: `${process.cwd()}/src`,
-        dest: `${process.cwd()}/public`,
-        indentedSyntax: false,
-        sourceMap: true,
-        indentType: "tab",
-        indentWidth: 4,
-        outputStyle: "expanded",
-        watch: true,
-        debug: true,
-    })
-);
 
 // Serve static files
 app.use(express.static(`${process.cwd()}/public`));

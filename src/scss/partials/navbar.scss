@@ -1,0 +1,21 @@
+.nav-icon {
+	z-index: 9999;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.navbar {
+	z-index: 2;
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+
+	.navlink {
+		padding: 0.7rem;
+		font-size: 18px;
+		color: var(--textcolor);
+	}
+}
