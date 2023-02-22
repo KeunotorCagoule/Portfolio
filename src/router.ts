@@ -17,4 +17,10 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/contact', (req, res) => {
+    res.render('pages/contact', {
+        title: 'Contact'
+    });
+});
+
 export default router;

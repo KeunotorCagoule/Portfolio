@@ -1,0 +1,51 @@
+@import "reset";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* 
+ ! GLOBALS
+ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	background: var(--background);
+	overflow-x: hidden;
+}
+
+::selection {
+	background: var(--link-light-color);
+	color: var(--background);
+}
+
+.hidden {
+	display: none !important;
+}
+
+@media screen and (max-width: 992px) {
+	html,
+	body {
+		min-height: 100%;
+	}
+}

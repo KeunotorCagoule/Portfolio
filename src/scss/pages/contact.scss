@@ -1,0 +1,44 @@
+.background {
+	height: 100%;
+	width: 100%;
+
+	& > .star {
+		border-radius: 50%;
+		position: absolute;
+		width: var(--i);
+		height: var(--i);
+		background: #fff;
+		animation: star 10s infinite alternate;
+	}
+}
+
+.foreground {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+    
+    .container {
+        margin-top: 3em;
+        opacity: 0.5;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: #fafafa;
+        width: 90%;
+    }
+}
+
+@keyframes star {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(150px);
+	}
+}
