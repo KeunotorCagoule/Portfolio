@@ -85,24 +85,44 @@
 						gap: 2em;
 						color: #fafafa;
 
-						.desc__cont {
+						.desc__uptitle{
+							text-transform: uppercase;
 							display: flex;
-							flex-direction: row;
-							gap: 2em;
-							align-items: center;
+							flex-direction: column;
+							flex-wrap: nowrap;
 
-							.card__description{
-								background-color: #2b4250;
-								border-radius: 5px;
-								padding: 2em;
+							.desc__desc{
+								font-size: 24px;
+								margin: 10px auto;
+								font-weight: 500;
+							}
+
+							.desc__cont {
 								display: flex;
-								flex-direction: column;
+								flex-direction: row;
+								gap: 2em;
+								align-items: center;
 	
-								.card__description__title{
-									text-transform: uppercase;
-									font-weight: 500;
-									margin: 10px auto;
-									font-size: 18px;
+								.card__description{
+									background-color: #2b4250;
+									border-radius: 5px;
+									padding: 2em;
+									display: flex;
+									flex-direction: column;
+									border: #fafafa 0.2px solid;
+									width: 50%;
+		
+									.card__description__title{
+										text-transform: uppercase;
+										font-weight: 500;
+										margin: 10px auto;
+										font-size: 18px;
+									}
+
+									.desc__subtitle {
+										text-transform: capitalize;
+										text-align: center;
+									}
 								}
 							}
 						}

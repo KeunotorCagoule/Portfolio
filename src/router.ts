@@ -23,4 +23,10 @@ router.get('/contact', (req, res) => {
     });
 });
 
+router.get('/blog', (req, res) => {
+    res.render('pages/blog', {
+        title: 'Blog'
+    });
+});
+
 export default router;
